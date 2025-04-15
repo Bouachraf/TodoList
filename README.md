@@ -15,7 +15,7 @@ cd TodoList
 
 ## 🛠️ Étape 2 : Installation des dépendances
 
-### 📦 Backend - Spring Boot
+### 📦 Backend - Express.js
 
 ```bash
 cd taskwave-backend
