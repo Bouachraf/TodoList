@@ -1,4 +1,4 @@
-
+![localhost_3000_ (1)](https://github.com/user-attachments/assets/da2a4f1e-7432-4716-b8d8-8c3810814d49)
 # 📝 TaskWave - To-Do List App
 
 TaskWave est une application **MERN Stack** complète de gestion des tâches avec une interface moderne et des fonctionnalités utiles pour organiser votre quotidien efficacement.
@@ -70,27 +70,22 @@ Par défaut, le frontend s'exécute sur : `http://localhost:5173`
 - Sélectionner une **date limite** via DatePicker
 
 🖼️ _Aperçu :_
-![tasklist](./screenshots/task-list.png)
-
+![localhost_3000_](https://github.com/user-attachments/assets/88dc79b2-0fe3-4dcc-a4bc-645cfa7d40a9)
+_Ajouter tâche :_
+![image](https://github.com/user-attachments/assets/2795cd3d-2c6f-4cff-b29c-ace6c155e6d4)
+![localhost_3000_ (1)](https://github.com/user-attachments/assets/d6f547a2-8e4a-4094-be97-ac4e85b2fb83)
+_- Modifier les champs d’une tâche existante (titre, description, priorité, date) :_
+![localhost_3000_ (2)](https://github.com/user-attachments/assets/628590a9-32b3-4483-bf84-60df6fdc14fd)
 ---
 
+
 ### 🗂️ Filtrage et affichage amélioré
-- Filtrer par tâches actives/complétées	
-- Visualisation des tâches sous forme de **cartes** ou **tableaux** (avec PrimeReact)
+- Filtrer par tâches actives/complétées
+  ![image](https://github.com/user-attachments/assets/ea19636e-ab15-45f7-8ca5-1a15637e65e0)
+- Visualisation des tâches sous forme de **cartes** ou **tableaux**
 - Icônes dynamiques selon la priorité
 - Texte barré et grisé si tâche terminée
 
-🖼️ _Exemple affichage avec priorité & statut :_
-![priority](./screenshots/priority-status.png)
-
----
-
-### 🛠️ Mode édition rapide
-
-- Modifier les champs d’une tâche existante (titre, description, priorité, date)
-
-🖼️ _Formulaire d’édition :_
-![edit](./screenshots/edit-task.png)
 
 ---
 
