@@ -47,7 +47,6 @@ const TodoList = ({ filter, setFilter }) => {
 
   return (
     <div>
-      <div className="mb-6">
         {filteredTodos.length === 0 ? (
           <div className="text-center py-8 text-gray-500">
             {filter === 'all' 
@@ -66,7 +65,6 @@ const TodoList = ({ filter, setFilter }) => {
             />
           ))
         )}
-      </div>
     </div>
   );
 };

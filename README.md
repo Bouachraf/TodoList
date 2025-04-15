@@ -1,70 +1,133 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📝 TaskWave - To-Do List App
 
-## Available Scripts
+TaskWave est une application **MERN Stack** complète de gestion des tâches avec une interface moderne et des fonctionnalités utiles pour organiser votre quotidien efficacement.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Étape 1 : Cloner le projet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+git clone https://github.com/Bouachraf/TodoList.git
+cd TodoList
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Étape 2 : Installation des dépendances
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📦 Backend - Spring Boot
 
-### `npm run build`
+```bash
+cd taskwave-backend
+npm install
+echo "MONGO_URI=mongodb://localhost:27017/taskwave" > .env
+echo "PORT=5000" >> .env
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> ⚠️ Assurez-vous d’avoir MongoDB installé.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🌐 Frontend - React.js + TailwindCSS + PrimeReact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd ../taskwave-frontend
+npm install
+```
 
-### `npm run eject`
+> ⚠️ Node.js 16+ recommandé.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ▶️ Étape 3 : Lancer l’application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ▶️ Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd taskwave-backend
+npm run dev
+```
 
-## Learn More
+Par défaut, le backend s'exécute sur : `http://localhost:5000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ▶️ Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd ../taskwave-frontend
+npm start
+```
 
-### Code Splitting
+Par défaut, le frontend s'exécute sur : `http://localhost:5173`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## ✨ Fonctionnalités principales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### ✅ Gestion des tâches
+- Ajouter / Modifier / Supprimer des tâches
+- Marquer une tâche comme terminée
+- Définir la **priorité** (Low, Medium, High)
+- Ajouter une **description**
+- Sélectionner une **date limite** via DatePicker
 
-### Making a Progressive Web App
+🖼️ _Aperçu :_
+![tasklist](./screenshots/task-list.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### 🗂️ Filtrage et affichage amélioré
+- Filtrer par tâches actives/complétées	
+- Visualisation des tâches sous forme de **cartes** ou **tableaux** (avec PrimeReact)
+- Icônes dynamiques selon la priorité
+- Texte barré et grisé si tâche terminée
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🖼️ _Exemple affichage avec priorité & statut :_
+![priority](./screenshots/priority-status.png)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 🛠️ Mode édition rapide
 
-### `npm run build` fails to minify
+- Modifier les champs d’une tâche existante (titre, description, priorité, date)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🖼️ _Formulaire d’édition :_
+![edit](./screenshots/edit-task.png)
+
+---
+
+## 🧰 Stack technique
+
+- **Frontend** : React.js, Tailwind CSS, PrimeReact, Vite
+- **Backend** : Express.js, Node Js
+- **Base de données** : MongoDB compass
+- **API REST** : CRUD des tâches
+
+---
+
+## 📂 Structure du projet
+
+```
+TodoList/
+├── taskwave-backend/
+│   ├── models/          # Modèles MongoDB
+│   ├── routes/          # Routes API
+│   ├── server.js        # Serveur principal
+│   └── package.json
+└── taskwave-frontend/
+    ├── public/
+    ├── src/
+    │   ├── components/  # Composants React
+    │   ├── styles/      # Fichiers CSS
+    │   ├── App.js
+    │   └── index.js
+    └── package.json
+---
+
+## 🙌 Auteurs
+
+- [@Bouachraf](https://github.com/Bouachraf)
+
+---
+
+## 📜 Licence
+
+MIT License

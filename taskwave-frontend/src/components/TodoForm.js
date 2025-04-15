@@ -108,7 +108,7 @@ const TodoForm = ({ onTodoAdded }) => {
         
         <button
           type="submit"
-          className="taskwave-btn taskwave-btn-primary w-full"
+          className="taskwave-btn  bg-gray-900 text-white w-full"
           disabled={isSubmitting}
         >
           {isSubmitting ? 'Adding...' : 'Add Task'}
