@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .taskwave-card {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300;
+  }
+  
+  .taskwave-btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors duration-300;
+  }
+  
+  .taskwave-btn-primary {
+    @apply bg-taskwave-primary text-white hover:bg-blue-700;
+  }
+  
+  .taskwave-btn-secondary {
+    @apply bg-taskwave-secondary text-white hover:bg-emerald-700;
+  }
+  
+  .taskwave-input {
+    @apply w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-taskwave-primary;
+  }
+}
