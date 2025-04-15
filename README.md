@@ -1,4 +1,3 @@
-![localhost_3000_ (1)](https://github.com/user-attachments/assets/da2a4f1e-7432-4716-b8d8-8c3810814d49)
 # 📝 TaskWave - To-Do List App
 
 TaskWave est une application **MERN Stack** complète de gestion des tâches avec une interface moderne et des fonctionnalités utiles pour organiser votre quotidien efficacement.
