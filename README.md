@@ -93,6 +93,7 @@ _- Modifier les champs d’une tâche existante (titre, description, priorité, 
 - **Frontend** : React.js, Tailwind CSS, PrimeReact, Vite
 - **Backend** : Express.js, Node Js
 - **Base de données** : MongoDB compass
+  ![image](https://github.com/user-attachments/assets/8a2e2613-8840-4613-a261-03817b2ee1d8)
 - **API REST** : CRUD des tâches
 
 ---
